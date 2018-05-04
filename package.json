@@ -1,0 +1,41 @@
+{
+  "name": "mongodb-http",
+  "version": "1.0.0",
+  "description": "http api for mongodb CRUD",
+  "main": "src/client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/dotterme/mongodb-http.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "HTTP",
+    "REST",
+    "CRUD",
+    "Lambda"
+  ],
+  "author": "Shawn Liu",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/dotterme/mongodb-http#readme",
+  "dependencies": {
+    "aws-sdk": "^2.232.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "log4js": "^2.5.3",
+    "mongodb": "^3.0.7",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.2.0"
+  }
+}

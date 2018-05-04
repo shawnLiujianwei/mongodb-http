@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "mocha"
+  ],
+  //    "parserOptions": {
+  //        "ecmaVersion": 2015,
+  //        "sourceType": "module"
+  //    },
+  "rules": {
+    "indent": [
+      "warn",
+      4
+    ],
+    "arrow-parens": "off",
+    "no-plusplus": "warn",
+    "object-curly-spacing": "off",
+    "max-len": "off",
+    "no-underscore-dangle": "off",
+    "prefer-arrow-callback": "error",
+    "comma-dangle": "off",
+    "no-await-in-loop": "off",
+    "array-callback-return": "off",
+    "mocha/no-exclusive-tests": "error"
+  }
+}
