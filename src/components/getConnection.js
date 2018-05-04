@@ -50,7 +50,7 @@ const getDbUrl = async (config) => {
     array.push('?');
     const temp = [];
     if (config.replicaSet) {
-      temp.push(`repliaceSet=${config.replicaSet}`)
+      temp.push(`replicaSet=${config.replicaSet}`)
     }
     if (config.authSource) {
       temp.push(`authSource=${config.authSource}`);
