@@ -67,14 +67,14 @@ module.exports = async config => {
   if (pool[url]) {
     return pool[url];
   }
-  // console.log(`Connection to mongodb:${url}`);
+  console.log(`Connection to mongodb:${url}`);
   const client = await MongoDB.connect(url,
     {
       promiseLibrary: Promise,
       poolSize: 50
     });
   const db = client.db();
-  // console.log(`Connected to mongodb:${url}`);
+  console.log(`Connected to mongodb:${url}`);
   pool[url] = db;
   return db;
 };

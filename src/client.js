@@ -55,7 +55,7 @@ const Collection = function (name, api, dbConfig) {
     return rp({
       uri: `${self.api}/collection/${self.name}`,
       method: 'POST',
-      data: {
+      body: {
         credentials: self.dbConfig,
         operation,
         args
