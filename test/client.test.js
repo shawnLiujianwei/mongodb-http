@@ -9,12 +9,16 @@ describe('test client', function () {
   before((done) => {
     db = new Client('http://localhost:3000', {
       host: 'localhost',
-      db: 'britvicData'
+      db: 'storeLocator_lambda'
     });
     done();
   })
   it('findOne test', async () => {
-    const res = await db.collection('store').findOne({uniqueKey: 'SPEEDWAY,WV RT  10 HUFF JCT,MAN,WV,25635'});
+    const res = await db.collection('store').insertOne(
+      {
+        placeId: "﻿ChIJ9bln5cgitkcRW0zZZQIBI_8"
+      })
+    ;
     expect(res).not.null;
   });
 });

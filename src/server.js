@@ -57,8 +57,8 @@ app.use(async (err, req, res, next) => {
     next();
   } else {
     logger.error(err);
-    if (err.code) {
-      res.status(err.code).send(err.message);
+    if (err.errorCode) {
+      res.status(err.errorCode).send(err.message);
     } else {
       res.status(500).send(err.message);
     }

@@ -52,16 +52,20 @@ const Collection = function (name, api, dbConfig) {
   this.dbConfig = dbConfig;
   this._send = function (operation, ...args) {
     const self = this;
-    return rp({
+    const p = {
       uri: `${self.api}/collection/${self.name}`,
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: {
         credentials: self.dbConfig,
         operation,
         args
       },
       json: true
-    });
+    }
+    return rp(p);
   }
 };
 
