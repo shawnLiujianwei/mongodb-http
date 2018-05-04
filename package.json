@@ -1,6 +1,6 @@
 {
   "name": "mongodb-http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "http api for mongodb CRUD",
   "main": "src/client.js",
   "scripts": {
