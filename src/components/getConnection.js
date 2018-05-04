@@ -27,6 +27,7 @@ const kms = Promise.promisifyAll(new AWS.KMS({
  * @param config
  */
 const getDbUrl = async (config) => {
+  console.log(JSON.stringify(config));
   const array = ['mongodb://'];
   if (config.username && config.password) {
     array.push(config.username);
