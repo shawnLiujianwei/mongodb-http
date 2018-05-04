@@ -28,7 +28,7 @@ app.use(async (req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   return next();
 });
-
+app.get('/ping', (req, res) => res.json(`pong at: ${new Date()}`));
 app.post('/collection/:collection', async (req, res, next) => {
   try {
     const body = req.body;
